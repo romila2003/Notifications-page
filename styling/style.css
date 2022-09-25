@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.space {
+  justify-content: space-between;
+}
+
+.bold {
+  font-weight: 800;
+}
+
+a {
+  text-decoration: none;
+  color: hsl(219deg, 85%, 26%);
+}
+
+.body-bg {
+  background-color: hsl(228deg, 71%, 99%);
+}
+
+.bg {
+  background-color: hsl(210deg, 60%, 98%);
+}
+
+.border-radius {
+  border-radius: 7px;
+}
+
+.mb-small {
+  margin-bottom: 0.1em;
+}
+
+.mb {
+  margin-bottom: 0.5em;
+}
+
+.mb-medium {
+  margin-bottom: 1em;
+}
+
+.mb-large {
+  margin-bottom: 2.5em;
+}
+
+.ml {
+  margin-left: 1em;
+}
+
+.ml-small {
+  margin-left: 0.5em;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.hover:hover {
+  color: hsl(219deg, 85%, 26%);
+}
+
+.info {
+  position: relative;
+}
+
+.padding {
+  padding: 1em;
+}
+
+.fs-large {
+  font-size: 1.5rem;
+}
+
+.fs-medium {
+  font-size: 1.1rem;
+}
+
+.fs-regular {
+  font-size: 0.8rem;
+}
+@media (min-width: 400px) {
+  .fs-regular {
+    font-size: 0.9rem;
+  }
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 0.7em;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 600px) {
+  body {
+    justify-content: center;
+    height: 100vh;
+  }
+}
+
+.header {
+  align-items: center;
+  max-width: 600px;
+  width: 100%;
+}
+.header h1 {
+  font-size: 1.1rem;
+}
+@media (min-width: 400px) {
+  .header h1 {
+    font-size: 1.5rem;
+  }
+}
+.header .number {
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(219deg, 85%, 26%);
+  padding: 0.3em 0.7em;
+  border-radius: 9px;
+  font-size: 0.8rem;
+}
+@media (min-width: 400px) {
+  .header .number {
+    margin-left: 0.5em;
+    font-size: 1.1rem;
+  }
+}
+.header p {
+  color: hsl(219deg, 12%, 42%);
+}
+
+main {
+  max-width: 650px;
+  width: 100%;
+  background-color: hsl(0deg, 0%, 100%);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+  padding: 1.2em;
+}
+@media (min-width: 500px) {
+  main {
+    padding: 2em;
+  }
+}
+
+.person img {
+  width: 100%;
+  max-width: 40px;
+}
+.person img:not(.chess) {
+  height: 100%;
+}
+.person span:not(.dark-grey) {
+  color: hsl(224deg, 21%, 14%);
+}
+.person p:not(.minutes) {
+  color: hsl(219deg, 12%, 42%);
+}
+.person .minutes {
+  color: hsl(219deg, 14%, 63%);
+}
+.person blockquote {
+  border: 1px solid hsl(205deg, 33%, 90%);
+  border-radius: 5px;
+  padding: 1em;
+  max-width: 500px;
+  width: 90%;
+}
+.person blockquote:hover {
+  background-color: hsl(211deg, 68%, 94%);
+}
+.person .hover:hover {
+  color: hsl(219deg, 85%, 26%);
+}
+
+.kimberly {
+  position: relative;
+}
+.kimberly .chess {
+  height: 90%;
+}
+@media (min-width: 476px) {
+  .kimberly .chess {
+    height: 100%;
+    position: absolute;
+    right: 0;
+  }
+}
+
+.notifications {
+  display: none;
+}
+
+.red-circle {
+  position: absolute;
+  background-color: hsl(1deg, 90%, 64%);
+  padding: 0.3em;
+  border-radius: 50%;
+  bottom: 0.3em;
+  margin-left: 0.4em;
+}
+
+.mark::before {
+  content: "un";
+}
+
+footer {
+  font-size: 12px;
+  text-align: center;
+}
+footer a {
+  color: hsl(219deg, 85%, 26%);
+}
+
+/*# sourceMappingURL=style.css.map */

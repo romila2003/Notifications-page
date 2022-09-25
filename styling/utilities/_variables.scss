@@ -1,0 +1,114 @@
+// FONT-FAMILY
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+$ff-plus-jakarta: 'Plus Jakarta Sans', sans-serif;
+
+// COLOURS
+
+$red: hsl(1, 90%, 64%);
+$blue: hsl(219, 85%, 26%);
+$white: hsl(0, 0%, 100%);
+$very-light-grayish-blue: hsl(210, 60%, 98%);
+$light-grayish-blue-1: hsl(211, 68%, 94%);
+$light-grayish-blue-2: hsl(205, 33%, 90%);
+$grayish-blue: hsl(219, 14%, 63%);
+$dark-grayish-blue: hsl(219, 12%, 42%);
+$very-dark-blue: hsl(224, 21%, 14%);
+$body-bg: hsl(228, 71%, 99%);
+
+*, 
+*::before, 
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+// UTILITY CLASSES
+
+.flex {
+    display: flex;
+}
+
+.space {
+    justify-content: space-between;
+}
+
+.bold {
+    font-weight: 800;
+}
+
+a {
+    text-decoration: none;
+    color: $blue;
+}
+
+.body-bg {
+    background-color: $body-bg;
+}
+
+.bg {
+    background-color: $very-light-grayish-blue;
+}
+
+.border-radius {
+    border-radius: 7px;
+}
+
+.mb-small {
+    margin-bottom: 0.1em;
+}
+
+.mb {
+    margin-bottom: 0.5em;
+}
+
+.mb-medium {
+    margin-bottom: 1em;
+}
+
+.mb-large {
+    margin-bottom: 2.5em;
+}
+
+.ml {
+    margin-left: 1em;
+}
+
+.ml-small {
+    margin-left: 0.5em;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.hover {
+    &:hover {
+        color: $blue;
+    }
+}
+.info {
+    position: relative;
+}
+
+.padding {
+    padding: 1em;
+}
+
+// FONT-SIZES
+
+$fs-large: 1.5rem;
+$fs-medium: 1.1rem;
+$fs-regular: 0.8rem;
+
+.fs-large { font-size: $fs-large; }
+.fs-medium { font-size: $fs-medium; }
+.fs-regular { 
+    font-size: $fs-regular; 
+
+    @media (min-width: 400px) {
+        font-size: $fs-regular + 0.1;
+    }
+}

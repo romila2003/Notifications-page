@@ -1,0 +1,141 @@
+@use "utilities/variables" as *;
+
+body {
+    font-family: $ff-plus-jakarta;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 0.7em;
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width: 600px) {
+        justify-content: center;
+        height: 100vh;
+    }
+}
+
+.header {
+    align-items: center;
+    max-width: 600px;
+    width: 100%;
+
+    h1 {
+        font-size: $fs-medium;
+
+        @media (min-width: 400px) {
+            font-size: $fs-large;
+        }
+    }
+
+    .number {
+        color: $white;
+        background-color: $blue;
+        padding: 0.3em 0.7em;
+        border-radius: 9px;
+        font-size: $fs-regular;
+
+        @media (min-width: 400px) {
+            margin-left: 0.5em;
+            font-size: $fs-medium;
+        }
+    }
+
+    p {
+        color: $dark-grayish-blue;
+    }
+}
+
+main {
+    max-width: 650px;
+    width: 100%;
+    background-color: $white;
+    box-shadow: 10px 10px 20px rgb(0,0,0,0.1);
+    padding: 1.2em;
+
+    @media (min-width: 500px) {
+        padding: 2em;
+    }
+}
+
+.person {
+    img {
+        width: 100%;
+        max-width: 40px;
+        
+        &:not(.chess) {
+            height: 100%;
+        }
+    }
+
+    span:not(.dark-grey) {
+        color: $very-dark-blue;
+    }
+
+    p:not(.minutes) {
+        color: $dark-grayish-blue;
+    }
+
+    .minutes {
+        color: $grayish-blue;
+    } 
+
+    blockquote {
+        border: 1px solid $light-grayish-blue-2;
+        border-radius: 5px;
+        padding: 1em;
+        max-width: 500px;
+        width: 90%;
+
+        &:hover {
+            background-color: $light-grayish-blue-1;
+        }
+    }
+
+    .hover {
+        &:hover {
+            color: $blue;
+        }
+    }
+}
+
+.kimberly {
+    position: relative;
+
+    .chess {
+    height: 90%;
+
+    @media (min-width: 476px) {
+        height: 100%;
+        position: absolute;
+        right: 0;
+    }
+}
+}
+
+.notifications {
+    display: none;
+}
+
+.red-circle {
+    position: absolute;
+    background-color: $red;
+    padding: 0.3em;
+    border-radius: 50%;
+    bottom: 0.3em;
+    margin-left: 0.4em;
+}
+
+.mark {
+    &::before {
+        content: "un";
+    }
+}
+
+footer { 
+    font-size: 12px; 
+    text-align: center;
+    
+    a { 
+        color: $blue; 
+    } 
+}
