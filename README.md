@@ -29,16 +29,16 @@ Users should be able to:
 
 # Mobile Preview
 
-![screenshot]()
+![screenshot](https://github.com/romila2003/Notifications-page/blob/main/mobile%20preview.PNG)
 
 # Desktop Preview 
 
-![screenshot]()
+![screenshot](https://github.com/romila2003/Notifications-page/blob/main/desktop%20preview.PNG)
 
 ### Links
 
  - Source code: [https://github.com/romila2003/Notifications-page](https://github.com/romila2003/Notifications-page)
- - Live website: []()
+ - Live website: [https://notifications-page.netlify.app/](https://notifications-page.netlify.app/)
 
 ## My process
 
